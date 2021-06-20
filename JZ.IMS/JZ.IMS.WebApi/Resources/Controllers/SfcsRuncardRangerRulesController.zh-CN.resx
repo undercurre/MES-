@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BOARD_QTY_ERROR" xml:space="preserve">
+    <value>请输入正确的拼板数。</value>
+  </data>
+  <data name="Err_CanNotFoundTheSettingOfRadixExclusive" xml:space="preserve">
+    <value>找不到进制排除字符 {0}。</value>
+  </data>
+  <data name="Err_Customer_Not_Found" xml:space="preserve">
+    <value>此客户信息不存在，请确认。</value>
+  </data>
+  <data name="Err_Data_Row_Abnormal" xml:space="preserve">
+    <value>第{0}行数据异常，请注意检查!</value>
+  </data>
+  <data name="Err_DateFormat" xml:space="preserve">
+    <value>{0}格式{1}不匹配。</value>
+  </data>
+  <data name="Err_FIX_HEADER_TAIL" xml:space="preserve">
+    <value>固定头和固定尾不能同时为空!</value>
+  </data>
+  <data name="Err_GetImportSnData" xml:space="preserve">
+    <value>该工单:{0}获取流水号列表失败!</value>
+  </data>
+  <data name="Err_GetRuncardRanger" xml:space="preserve">
+    <value>请选择一行工单流水号范围值!</value>
+  </data>
+  <data name="Err_GetSnData" xml:space="preserve">
+    <value>计算SN异常!</value>
+  </data>
+  <data name="Err_Illegal_Range" xml:space="preserve">
+    <value>流水号的变化字符中{0}含有非法字符，请确认。</value>
+  </data>
+  <data name="Err_MACHINE_ID_Not_Found" xml:space="preserve">
+    <value>设备编号不存在，请确认。</value>
+  </data>
+  <data name="Err_MACHINE_Not_Found" xml:space="preserve">
+    <value>设备编号:{0}不存在，请确认。</value>
+  </data>
+  <data name="Err_NoFomat" xml:space="preserve">
+    <value>料号{0}没有设定流水号格式。</value>
+  </data>
+  <data name="Err_NotInput_DIGITAL" xml:space="preserve">
+    <value>请输入进制。</value>
+  </data>
+  <data name="Err_NotInput_FIX_HEADER_TAIL" xml:space="preserve">
+    <value>请输入前导符或结束符。</value>
+  </data>
+  <data name="Err_NotSelectRuncardRangerRuleSetby" xml:space="preserve">
+    <value>请选择一个设定流水范围的条件。</value>
+  </data>
+  <data name="Err_Not_RANGE_START_CODE" xml:space="preserve">
+    <value>请输入流水范围开始字符。</value>
+  </data>
+  <data name="Err_OperationSiteLinesIsNotEixst" xml:space="preserve">
+    <value>获取站点的线别不存在!</value>
+  </data>
+  <data name="Err_ParametersNotExisted" xml:space="preserve">
+    <value>字典参数配置不完整。</value>
+  </data>
+  <data name="Err_PART_NO" xml:space="preserve">
+    <value>请录入成品料号。</value>
+  </data>
+  <data name="Err_PleasSelectData" xml:space="preserve">
+    <value>请您选择数据!</value>
+  </data>
+  <data name="Err_PN_Not_Found" xml:space="preserve">
+    <value>料号{0}在系统中不存在，请检查。</value>
+  </data>
+  <data name="Err_PrintedImportWO" xml:space="preserve">
+    <value>该工单:{0}已经打印了!</value>
+  </data>
+  <data name="Err_PrintImportRuncardSN" xml:space="preserve">
+    <value>请至少选择一行！</value>
+  </data>
+  <data name="Err_RADIX_TYPE" xml:space="preserve">
+    <value>进制类型设定有误，请联系管理员处理。</value>
+  </data>
+  <data name="Err_RANGE" xml:space="preserve">
+    <value>变化位数不能小于1， 请录入正确的变化位数。</value>
+  </data>
+  <data name="Err_RangeLengthRangeStartCodeNotMatch" xml:space="preserve">
+    <value>起始码字符长度与规定的长度不一致，请检查。</value>
+  </data>
+  <data name="Err_RangerhavedPrinte" xml:space="preserve">
+    <value>该工单流水号范围已经打印了!</value>
+  </data>
+  <data name="Err_RangerhavedPrinteEx" xml:space="preserve">
+    <value>该工单:{0}开始流水号:{1},已经打印了!</value>
+  </data>
+  <data name="Err_Ranger_Existed" xml:space="preserve">
+    <value>流水号{0}已包含在范围{1}内。</value>
+  </data>
+  <data name="Err_RangeStartCodeFormatNotMatch" xml:space="preserve">
+    <value>&lt;Range Start Code&gt;不能匹配格式，不允许存在{0}字符。</value>
+  </data>
+  <data name="Err_RangleRule" xml:space="preserve">
+    <value>请设置条码管理规则，请注意检查!</value>
+  </data>
+  <data name="ERR_RULE_TYPE" xml:space="preserve">
+    <value>规则类型错误，当前无此规则！</value>
+  </data>
+  <data name="Err_RuncardRangerRuleDuplicate" xml:space="preserve">
+    <value>此流水号范围规则已存在，请检查。</value>
+  </data>
+  <data name="Err_SelectDataIsNoValite" xml:space="preserve">
+    <value>选择了无效的数据，只能允许删除未启用的数据!</value>
+  </data>
+  <data name="Err_SetProductPrintFile" xml:space="preserve">
+    <value>请配置产品关联的打印模板!</value>
+  </data>
+  <data name="Err_SiteIsnotEixst" xml:space="preserve">
+    <value>站点信息不存在!</value>
+  </data>
+  <data name="Err_SNFormat" xml:space="preserve">
+    <value>流水号{0}格式{1}不匹配。</value>
+  </data>
+  <data name="Err_SNIsReplace" xml:space="preserve">
+    <value>流水号{0}已被用作替换流水号，不能作为新范围设定。</value>
+  </data>
+  <data name="Err_SN_COUNT_MESSAGE" xml:space="preserve">
+    <value>参数SNCOUNT要求大于0。</value>
+  </data>
+  <data name="ERR_TASK_TYPE" xml:space="preserve">
+    <value>请选择正确的镭雕任务类型。</value>
+  </data>
+  <data name="ERR_TYPE_ID" xml:space="preserve">
+    <value>请选择正确的镭雕任务id。</value>
+  </data>
+  <data name="Err_UserNotEixst" xml:space="preserve">
+    <value>用户信息不存在。</value>
+  </data>
+  <data name="Err_WoOrderNO" xml:space="preserve">
+    <value>请录入工单号。</value>
+  </data>
+  <data name="Err_WO_ID_Not_Found" xml:space="preserve">
+    <value>工单不存在，请确认。</value>
+  </data>
+  <data name="Err_WO_Not_Found" xml:space="preserve">
+    <value>工单{0}不存在，请确认。</value>
+  </data>
+  <data name="GET_PRINT_DATA_FAIL" xml:space="preserve">
+    <value>获取打印数据失败！</value>
+  </data>
+  <data name="HEADER_STATUS_PRINT" xml:space="preserve">
+    <value>当前流水号信息已打印！</value>
+  </data>
+  <data name="LASER_TASK_RELEASE_ERR" xml:space="preserve">
+    <value>当前任务已下达！</value>
+  </data>
+  <data name="Msg_CharNotInDigitalArray" xml:space="preserve">
+    <value>字符 {0} 不在 {1} 进制的字符数组{2}中</value>
+  </data>
+  <data name="Msg_NumberOverFlow" xml:space="preserve">
+    <value>递减数量超出范围</value>
+  </data>
+  <data name="Msg_QTY_Overflow" xml:space="preserve">
+    <value>所选{0}数量{1}超出最大允许范围，请确认。</value>
+  </data>
+  <data name="Msg_Radix_Convert_Overflow" xml:space="preserve">
+    <value>进制转换运算溢出</value>
+  </data>
+  <data name="Msg_Radix_Scope_OverFlow" xml:space="preserve">
+    <value>进制 {0} 不在定义范围[2..36]内</value>
+  </data>
+  <data name="Msg_SourceDigitalWrong" xml:space="preserve">
+    <value>源头进制 {0} 不在定义范围[2..36]内</value>
+  </data>
+  <data name="Msg_TargetDigitalWrong" xml:space="preserve">
+    <value>目标进制 {0}不在定义范围[2..36]内</value>
+  </data>
+  <data name="PRINT_FAIL" xml:space="preserve">
+    <value>打印失败！</value>
+  </data>
+  <data name="RUNCARD_RANGER_DATA_NULL" xml:space="preserve">
+    <value>获取流水号范围数据失败，请检查！</value>
+  </data>
+  <data name="RUNCARD_RANGER_ID_NOT_EMPTY" xml:space="preserve">
+    <value>请选择流水号范围数据。</value>
+  </data>
+  <data name="SAVE_IMPORTRUNCARDSN_HEADER_ERR" xml:space="preserve">
+    <value>保存导入流水号的主表数据错误！</value>
+  </data>
+  <data name="SN_NULL" xml:space="preserve">
+    <value>请录入流水号。</value>
+  </data>
+  <data name="SN_QTY_NOT_ENOUGH" xml:space="preserve">
+    <value>当前工单流水号剩余数量不足。</value>
+  </data>
+</root>

@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\JZ.IMS.Models.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\JZ.IMS.Models.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\**" />
+    <Compile Remove="SfcsRuncardRanger\**" />
+    <Compile Remove="SfcsWo\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="SfcsRuncardRanger\**" />
+    <EmbeddedResource Remove="SfcsWo\**" />
+    <None Remove="Common\**" />
+    <None Remove="SfcsRuncardRanger\**" />
+    <None Remove="SfcsWo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LaserTask\" />
+    <Folder Include="SfcsInbound\" />
+  </ItemGroup>
+
+</Project>

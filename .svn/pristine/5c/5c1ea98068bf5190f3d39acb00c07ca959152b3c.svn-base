@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject>JZ.IMS.WebApi.Program</StartupObject>
+    <SignAssembly>false</SignAssembly>
+    <UserSecretsId>9c503f08-d4b3-4814-a854-a60c8a6d31ab</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\netcoreapp2.2\JZ.IMS.WebApi.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\JZ.IMS.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\Auth11Controller.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="JZ.IMS.WebApi.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Alexinea.Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="Aspose.Slides.NET" Version="19.10.0" />
+    <PackageReference Include="Aspose.Words" Version="19.10.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="SkiaSharp" Version="2.80.2" />
+    <PackageReference Include="Spire.Office" Version="5.12.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JZ.IMS.Core\JZ.IMS.Core.csproj" />
+    <ProjectReference Include="..\JZ.IMS.IRepository\JZ.IMS.IRepository.csproj" />
+    <ProjectReference Include="..\JZ.IMS.IServices\JZ.IMS.IServices.csproj" />
+    <ProjectReference Include="..\JZ.IMS.Job\JZ.IMS.Job.csproj" />
+    <ProjectReference Include="..\JZ.IMS.Models\JZ.IMS.Models.csproj" />
+    <ProjectReference Include="..\JZ.IMS.Repository.Oracle\JZ.IMS.Repository.Oracle.csproj" />
+    <ProjectReference Include="..\JZ.IMS.Services\JZ.IMS.Services.csproj" />
+    <ProjectReference Include="..\JZ.IMS.ViewModels\JZ.IMS.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\Dll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License">
+      <HintPath>..\Dll\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\Dll\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.XLS">
+      <HintPath>..\Dll\Spire.XLS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\SfcsInbound\" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" host_1json__JSONSchema="http://json.schemastore.org/winget-pkgs" /></VisualStudio></ProjectExtensions>
+
+</Project>

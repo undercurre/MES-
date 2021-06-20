@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.2\JZ.IMS.ViewModels.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.2\JZ.IMS.ViewModels.xmll</DocumentationFile>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SfcsRuncardRanger\**" />
+    <Compile Remove="SfcsWo\**" />
+    <EmbeddedResource Remove="SfcsRuncardRanger\**" />
+    <EmbeddedResource Remove="SfcsWo\**" />
+    <None Remove="SfcsRuncardRanger\**" />
+    <None Remove="SfcsWo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JZ.IMS.Models\JZ.IMS.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ProductBasicSet\ResourcesReplace\" />
+    <Folder Include="ProductBasicSet\UidsReplace\" />
+    <Folder Include="SFCSOperationSites\" />
+    <Folder Include="SfcsInbound\" />
+  </ItemGroup>
+
+</Project>

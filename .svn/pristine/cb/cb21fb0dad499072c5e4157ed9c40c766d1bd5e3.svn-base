@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="attachment_id_error" xml:space="preserve">
+    <value>附件不能为空。</value>
+  </data>
+  <data name="begdate_nonull" xml:space="preserve">
+    <value>开始日期不能为空。</value>
+  </data>
+  <data name="break_operation_code_error" xml:space="preserve">
+    <value>拆板工序不能为空或零。</value>
+  </data>
+  <data name="code_is_same" xml:space="preserve">
+    <value>代码或编号不能重复。</value>
+  </data>
+  <data name="collect_operation_error" xml:space="preserve">
+    <value>采集工序不能为空。</value>
+  </data>
+  <data name="enabled_error" xml:space="preserve">
+    <value>是否激活值错误。</value>
+  </data>
+  <data name="Err_Alarm_Criteria_Over_Stop_Criteria" xml:space="preserve">
+    <value>配置的警告标准大于中止标准，请确认。</value>
+  </data>
+  <data name="Err_Division_Start_Over_Division_Criteria" xml:space="preserve">
+    <value>开始计算切入点必需少于分割标准，请确认。</value>
+  </data>
+  <data name="Err_Input_Operation_After_Stop_Operation" xml:space="preserve">
+    <value>投入工序不能在停线工序之后，请确认。</value>
+  </data>
+  <data name="Err_Not_Include_NDF" xml:space="preserve">
+    <value>NDF相关的管控必需选择累计误测数量，请确认。</value>
+  </data>
+  <data name="Err_Not_Input_Input_Operation" xml:space="preserve">
+    <value>没有配置管控的投入工序，请确认。</value>
+  </data>
+  <data name="Err_Not_Input_Stop_Operation" xml:space="preserve">
+    <value>没有配置管控的停线工序，请确认。</value>
+  </data>
+  <data name="Err_No_Monitor_Mode" xml:space="preserve">
+    <value>没有选择监控模式，请确认。</value>
+  </data>
+  <data name="Err_PCB_PN_Over_Route" xml:space="preserve">
+    <value>PCB段料号{0}流程设定只能在T/U(含)到制程结束工序之间，请确认。</value>
+  </data>
+  <data name="Err_SMT_PN_Over_Route" xml:space="preserve">
+    <value>SMT段料号{0}流程设定只能在其实工序到T/U(含)之间，请确认。</value>
+  </data>
+  <data name="link_break_some_error" xml:space="preserve">
+    <value>连板工序和拆板工序不能相同。</value>
+  </data>
+  <data name="link_operation_code_error" xml:space="preserve">
+    <value>连板工序不能为空或零。</value>
+  </data>
+  <data name="master_id_error" xml:space="preserve">
+    <value>主表键值不存在。</value>
+  </data>
+  <data name="nofind_file" xml:space="preserve">
+    <value>没有找到相关文档。</value>
+  </data>
+  <data name="notfind_error" xml:space="preserve">
+    <value>没有发现可用计划数据。</value>
+  </data>
+  <data name="objects_name_repeat_error" xml:space="preserve">
+    <value>采集类型名称不能重复。</value>
+  </data>
+  <data name="part_no_error" xml:space="preserve">
+    <value>料号不能为空。</value>
+  </data>
+  <data name="part_no_noexist" xml:space="preserve">
+    <value>输入的料号{0}不存在。</value>
+  </data>
+  <data name="part_no_repeat_error" xml:space="preserve">
+    <value>采集工序不能重复。</value>
+  </data>
+  <data name="Please_NewUIDs_InforMation" xml:space="preserve">
+    <value>请输入新旧料号信息。</value>
+  </data>
+  <data name="RESOURCE_ID_NOT_NULL" xml:space="preserve">
+    <value>资源id不能为空。</value>
+  </data>
+  <data name="routeconfig_noexist" xml:space="preserve">
+    <value>制程没有配置，请确认。</value>
+  </data>
+  <data name="route_id_error" xml:space="preserve">
+    <value>制程不能为空。</value>
+  </data>
+  <data name="route_id_noexist" xml:space="preserve">
+    <value>此制程不存在。</value>
+  </data>
+  <data name="sfcs_product_multi_runcard_inx" xml:space="preserve">
+    <value>此料号的连板工序和拆板工序不能重复。</value>
+  </data>
+  <data name="SFCS_UNIQUE_DEFECT_CONFIG_CODE" xml:space="preserve">
+    <value>不良代码不能重复。</value>
+  </data>
+  <data name="smt_stencil_config_error" xml:space="preserve">
+    <value>钢网编号已经存在</value>
+  </data>
+  <data name="STENCIL_ID_NOT_NULL" xml:space="preserve">
+    <value>钢网id不能为空。</value>
+  </data>
+  <data name="uid_id2part_no_error" xml:space="preserve">
+    <value>此料号的UID种类不能重复。</value>
+  </data>
+  <data name="uid_id_error" xml:space="preserve">
+    <value>UID种类不能为空。</value>
+  </data>
+  <data name="UPLOAD_ERROR" xml:space="preserve">
+    <value>上传失败。</value>
+  </data>
+  <data name="USERNAME_NOT_NULL" xml:space="preserve">
+    <value>操作用户不能为空。</value>
+  </data>
+  <data name="USER_ID_NOT_NULL" xml:space="preserve">
+    <value>用户ID不能为空。</value>
+  </data>
+</root>

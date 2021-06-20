@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\发布文件\JZ.IMS.WEBAPI</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Alexinea.Autofac.Extensions.DependencyInjection.dll">
+      <publishTime>02/09/2018 00:07:14</publishTime>
+    </File>
+    <File Include="appsettings.Development.json">
+      <publishTime>07/03/2020 10:31:46</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>08/06/2020 17:13:29</publishTime>
+    </File>
+    <File Include="Aspose.Cells.dll">
+      <publishTime>03/31/2020 09:47:14</publishTime>
+    </File>
+    <File Include="Autofac.dll">
+      <publishTime>08/09/2016 13:56:12</publishTime>
+    </File>
+    <File Include="AutoMapper.dll">
+      <publishTime>11/17/2018 10:14:56</publishTime>
+    </File>
+    <File Include="AutoMapper.Extensions.Microsoft.DependencyInjection.dll">
+      <publishTime>11/18/2018 08:27:48</publishTime>
+    </File>
+    <File Include="BouncyCastle.Crypto.dll">
+      <publishTime>05/28/2018 16:12:20</publishTime>
+    </File>
+    <File Include="Dapper.dll">
+      <publishTime>08/29/2019 13:18:20</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>09/24/2019 19:58:14</publishTime>
+    </File>
+    <File Include="en-US/JZ.IMS.WebApi.resources.dll">
+      <publishTime>08/22/2020 14:29:31</publishTime>
+    </File>
+    <File Include="EPPlus.Core.dll">
+      <publishTime>11/30/2017 09:51:26</publishTime>
+    </File>
+    <File Include="FluentValidation.AspNetCore.dll">
+      <publishTime>12/18/2018 19:07:16</publishTime>
+    </File>
+    <File Include="FluentValidation.dll">
+      <publishTime>12/18/2018 19:07:14</publishTime>
+    </File>
+    <File Include="Google.Protobuf.dll">
+      <publishTime>08/10/2018 18:51:54</publishTime>
+    </File>
+    <File Include="host.Development.json">
+      <publishTime>12/26/2019 10:41:10</publishTime>
+    </File>
+    <File Include="host.json">
+      <publishTime>07/25/2020 10:55:11</publishTime>
+    </File>
+    <File Include="JZ.IMS.Core.dll">
+      <publishTime>08/22/2020 14:22:21</publishTime>
+    </File>
+    <File Include="JZ.IMS.Core.pdb">
+      <publishTime>08/22/2020 14:22:21</publishTime>
+    </File>
+    <File Include="JZ.IMS.IRepository.dll">
+      <publishTime>08/22/2020 14:22:22</publishTime>
+    </File>
+    <File Include="JZ.IMS.IRepository.pdb">
+      <publishTime>08/22/2020 14:22:22</publishTime>
+    </File>
+    <File Include="JZ.IMS.IServices.dll">
+      <publishTime>08/22/2020 14:22:26</publishTime>
+    </File>
+    <File Include="JZ.IMS.IServices.pdb">
+      <publishTime>08/22/2020 14:22:26</publishTime>
+    </File>
+    <File Include="JZ.IMS.Models.dll">
+      <publishTime>08/22/2020 14:22:17</publishTime>
+    </File>
+    <File Include="JZ.IMS.Models.pdb">
+      <publishTime>08/22/2020 14:22:17</publishTime>
+    </File>
+    <File Include="JZ.IMS.Models.xml">
+      <publishTime>08/22/2020 14:22:17</publishTime>
+    </File>
+    <File Include="JZ.IMS.Repository.Oracle.dll">
+      <publishTime>08/22/2020 14:29:26</publishTime>
+    </File>
+    <File Include="JZ.IMS.Repository.Oracle.pdb">
+      <publishTime>08/22/2020 14:29:26</publishTime>
+    </File>
+    <File Include="JZ.IMS.Services.dll">
+      <publishTime>08/22/2020 14:22:28</publishTime>
+    </File>
+    <File Include="JZ.IMS.Services.pdb">
+      <publishTime>08/22/2020 14:22:28</publishTime>
+    </File>
+    <File Include="JZ.IMS.ViewModels.dll">
+      <publishTime>08/22/2020 14:22:19</publishTime>
+    </File>
+    <File Include="JZ.IMS.ViewModels.pdb">
+      <publishTime>08/22/2020 14:22:19</publishTime>
+    </File>
+    <File Include="JZ.IMS.ViewModels.xml">
+      <publishTime>08/22/2020 14:22:19</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.deps.json">
+      <publishTime>08/22/2020 14:22:38</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.dll">
+      <publishTime>08/22/2020 14:29:30</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.pdb">
+      <publishTime>08/22/2020 14:29:30</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.runtimeconfig.json">
+      <publishTime>08/22/2020 14:22:38</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.Views.dll">
+      <publishTime>08/22/2020 14:29:32</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.Views.pdb">
+      <publishTime>08/22/2020 14:29:32</publishTime>
+    </File>
+    <File Include="JZ.IMS.WebApi.xml">
+      <publishTime>08/22/2020 14:29:30</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>04/30/2018 16:29:02</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>04/30/2018 16:29:04</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>09/24/2019 19:57:40</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>09/24/2019 19:57:46</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>09/24/2019 19:57:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>09/24/2019 19:57:48</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>09/24/2019 19:57:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>09/24/2019 19:57:42</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>09/24/2019 19:57:52</publishTime>
+    </File>
+    <File Include="Microsoft.Win32.SystemEvents.dll">
+      <publishTime>05/15/2018 13:29:34</publishTime>
+    </File>
+    <File Include="MySql.Data.dll">
+      <publishTime>06/25/2019 03:21:48</publishTime>
+    </File>
+    <File Include="Newtonsoft.Json.dll">
+      <publishTime>04/22/2019 01:06:16</publishTime>
+    </File>
+    <File Include="Npgsql.dll">
+      <publishTime>09/05/2019 09:44:24</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>04/24/2018 21:27:10</publishTime>
+    </File>
+    <File Include="Oracle.ManagedDataAccess.dll">
+      <publishTime>07/09/2019 13:58:10</publishTime>
+    </File>
+    <File Include="Renci.SshNet.dll">
+      <publishTime>10/16/2017 20:53:06</publishTime>
+    </File>
+    <File Include="runtimes/osx/native/libSkiaSharp.dylib">
+      <publishTime>12/14/2019 02:41:02</publishTime>
+    </File>
+    <File Include="runtimes/tizen-armel/native/libSkiaSharp.so">
+      <publishTime>12/14/2019 02:41:02</publishTime>
+    </File>
+    <File Include="runtimes/tizen-x86/native/libSkiaSharp.so">
+      <publishTime>12/14/2019 02:41:02</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll">
+      <publishTime>09/18/2018 19:38:14</publishTime>
+    </File>
+    <File Include="runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>04/17/2019 18:07:28</publishTime>
+    </File>
+    <File Include="runtimes/win-arm64/native/sni.dll">
+      <publishTime>07/03/2020 08:48:37</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/libSkiaSharp.dll">
+      <publishTime>12/14/2019 02:41:08</publishTime>
+    </File>
+    <File Include="runtimes/win-x64/native/sni.dll">
+      <publishTime>07/03/2020 08:48:37</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/libSkiaSharp.dll">
+      <publishTime>12/14/2019 02:41:08</publishTime>
+    </File>
+    <File Include="runtimes/win-x86/native/sni.dll">
+      <publishTime>07/03/2020 08:48:38</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll">
+      <publishTime>05/15/2018 13:29:34</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll">
+      <publishTime>09/18/2018 19:38:14</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/15/2019 08:54:18</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll">
+      <publishTime>04/17/2019 18:07:28</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>07/19/2017 10:01:34</publishTime>
+    </File>
+    <File Include="SkiaSharp.dll">
+      <publishTime>12/14/2019 02:41:06</publishTime>
+    </File>
+    <File Include="SshNet.Security.Cryptography.dll">
+      <publishTime>07/14/2016 20:47:20</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.dll">
+      <publishTime>11/07/2018 10:25:10</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>11/07/2018 10:25:06</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>11/07/2018 10:25:08</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>11/07/2018 10:25:06</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>11/05/2016 04:55:42</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>11/05/2016 04:55:44</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>11/05/2016 04:55:46</publishTime>
+    </File>
+    <File Include="System.Configuration.ConfigurationManager.dll">
+      <publishTime>11/20/2017 18:09:04</publishTime>
+    </File>
+    <File Include="System.Data.SqlClient.dll">
+      <publishTime>04/17/2019 18:07:28</publishTime>
+    </File>
+    <File Include="System.Drawing.Common.dll">
+      <publishTime>09/18/2018 19:38:14</publishTime>
+    </File>
+    <File Include="System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>11/15/2019 08:54:50</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.ProtectedData.dll">
+      <publishTime>07/19/2017 10:01:34</publishTime>
+    </File>
+    <File Include="System.Text.Encoding.CodePages.dll">
+      <publishTime>11/15/2019 08:37:52</publishTime>
+    </File>
+    <File Include="System.Xml.XPath.XmlDocument.dll">
+      <publishTime>11/05/2016 04:57:34</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>08/22/2020 14:29:36</publishTime>
+    </File>
+    <File Include="zh-CN/JZ.IMS.WebApi.resources.dll">
+      <publishTime>08/22/2020 14:29:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

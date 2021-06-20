@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BakingTime_No_Yet" xml:space="preserve">
+    <value>烘烤时间还没达到额定的最少时间，请确认。</value>
+  </data>
+  <data name="Cannot_Find_BakingRule" xml:space="preserve">
+    <value>找不到对应的烘烤规则，请检查相关设定。</value>
+  </data>
+  <data name="COMPONENT_NO_FOUND" xml:space="preserve">
+    <value>没有找到元件等级</value>
+  </data>
+  <data name="Current_Is_Same" xml:space="preserve">
+    <value>当前区域与所选区域相同，请确认。</value>
+  </data>
+  <data name="Err_MSDReelNeedToBake" xml:space="preserve">
+    <value>料卷{0}的暴露时间已经超过有效期，请进行烘烤。</value>
+  </data>
+  <data name="Err_Wrong_MSD_Route" xml:space="preserve">
+    <value>料卷{0}当前工作是{1}，泵进行用完操作。</value>
+  </data>
+  <data name="Material_ Forbidden_Bake" xml:space="preserve">
+    <value>物料{0}开封已超期，此类物料禁止烘烤，请刷用完。</value>
+  </data>
+  <data name="Material_Currently_Working" xml:space="preserve">
+    <value>料卷{0}当前都工作是{1}，泵进行烘烤操作。</value>
+  </data>
+  <data name="MATERIAL_NO_CONTROL" xml:space="preserve">
+    <value>料卷{0}等级缺省，不需要进行管控(系统默认)。</value>
+  </data>
+  <data name="MATERIAL_NO_CONTROLEX" xml:space="preserve">
+    <value>料卷{0}等级为&lt;{1}&gt;，不需要进行管控。</value>
+  </data>
+  <data name="Material_Same_Operation" xml:space="preserve">
+    <value>料卷{0}正在进行相同的动作，请确认。</value>
+  </data>
+  <data name="Material_Used_Finish" xml:space="preserve">
+    <value>料卷已刷用完，不能作业。</value>
+  </data>
+  <data name="Modified_In_Unsealed" xml:space="preserve">
+    <value>只有开封状态下可以修改作业区域。</value>
+  </data>
+  <data name="MSD_Need_Bake" xml:space="preserve">
+    <value>料卷{0}的暴露时间已经超过有效期，请进行烘烤。</value>
+  </data>
+  <data name="MSD_NOT_ERROR" xml:space="preserve">
+    <value>该物料为非MSD管控物料！</value>
+  </data>
+  <data name="Must_Be_Operations" xml:space="preserve">
+    <value>全新料卷必须先开封，再进行其他操作。</value>
+  </data>
+  <data name="No_MSD_CONTROL_STANDARDS" xml:space="preserve">
+    <value>没有找到等级{0}，厚度{1}，暴露温度{2}，暴露湿度{3}的MSD管控标准，请确认。</value>
+  </data>
+  <data name="PLEASE_SELECT_BAKING" xml:space="preserve">
+    <value>请选择烘烤规则。</value>
+  </data>
+  <data name="PLEASE_SELEC_ACTION" xml:space="preserve">
+    <value>请选择需要执行的动作。</value>
+  </data>
+  <data name="PLEASE_SELEC_AREA" xml:space="preserve">
+    <value>请选择操作区域。</value>
+  </data>
+  <data name="REEL_NOT_EXIST_ERROR" xml:space="preserve">
+    <value>料卷{0}不存在，请检查。</value>
+  </data>
+  <data name="Select_Correct_Baking" xml:space="preserve">
+    <value>请选择正确的烘烤标准。</value>
+  </data>
+</root>

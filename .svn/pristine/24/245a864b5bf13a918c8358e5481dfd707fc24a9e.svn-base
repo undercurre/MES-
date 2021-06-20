@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SfcsRuncardRanger\**" />
+    <Compile Remove="SfcsWo\**" />
+    <EmbeddedResource Remove="SfcsRuncardRanger\**" />
+    <EmbeddedResource Remove="SfcsWo\**" />
+    <None Remove="SfcsRuncardRanger\**" />
+    <None Remove="SfcsWo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ProcessSet\ISfcsOperationLinesRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JZ.IMS.Core\JZ.IMS.Core.csproj" />
+    <ProjectReference Include="..\JZ.IMS.Models\JZ.IMS.Models.csproj" />
+    <ProjectReference Include="..\JZ.IMS.ViewModels\JZ.IMS.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AssemblyOperation\" />
+    <Folder Include="SfcsInbound\" />
+  </ItemGroup>
+
+</Project>

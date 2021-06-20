@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BOARD_QTY_ERROR" xml:space="preserve">
+    <value>Please enter the correct number of puzzles.</value>
+  </data>
+  <data name="Err_CanNotFoundTheSettingOfRadixExclusive" xml:space="preserve">
+    <value>Unable to find base exclusion character {0}.</value>
+  </data>
+  <data name="Err_Customer_Not_Found" xml:space="preserve">
+    <value>This customer information does not exist, please confirm.</value>
+  </data>
+  <data name="Err_Data_Row_Abnormal" xml:space="preserve">
+    <value>The data in row {0} is abnormal, please check!</value>
+  </data>
+  <data name="Err_DateFormat" xml:space="preserve">
+    <value>The data {0} format {1} does not match.</value>
+  </data>
+  <data name="Err_FIX_HEADER_TAIL" xml:space="preserve">
+    <value>The fixed head and fixed tail cannot be empty at the same time!</value>
+  </data>
+  <data name="Err_GetImportSnData" xml:space="preserve">
+    <value>The ticket: {0} failed to obtain the serial number list!</value>
+  </data>
+  <data name="Err_GetRuncardRanger" xml:space="preserve">
+    <value>Please Get a row rancard range data！</value>
+  </data>
+  <data name="Err_GetSnData" xml:space="preserve">
+    <value>Generate Sn is error！</value>
+  </data>
+  <data name="Err_Illegal_Range" xml:space="preserve">
+    <value>The change character of the serial number contains illegal characters, please confirm.</value>
+  </data>
+  <data name="Err_MACHINE_ID_Not_Found" xml:space="preserve">
+    <value>Device number does not exist, please confirm.</value>
+  </data>
+  <data name="Err_MACHINE_Not_Found" xml:space="preserve">
+    <value>Device number :{0} does not exist, please confirm.</value>
+  </data>
+  <data name="Err_NoFomat" xml:space="preserve">
+    <value>Item number {0} has no serial number format.</value>
+  </data>
+  <data name="Err_NotInput_DIGITAL" xml:space="preserve">
+    <value>Please enter base.</value>
+  </data>
+  <data name="Err_NotInput_FIX_HEADER_TAIL" xml:space="preserve">
+    <value>Please enter a leading or ending character.</value>
+  </data>
+  <data name="Err_NotSelectRuncardRangerRuleSetby" xml:space="preserve">
+    <value>Please select a condition for setting the flow range.</value>
+  </data>
+  <data name="Err_Not_RANGE_START_CODE" xml:space="preserve">
+    <value>Please enter the starting character of the pipeline range.</value>
+  </data>
+  <data name="Err_OperationSiteLinesIsNotEixst" xml:space="preserve">
+    <value>Site Lines Is Not Exist!</value>
+  </data>
+  <data name="Err_ParametersNotExisted" xml:space="preserve">
+    <value>The dictionary parameter configuration is incomplete.</value>
+  </data>
+  <data name="Err_PART_NO" xml:space="preserve">
+    <value>Please enter the finished material number.</value>
+  </data>
+  <data name="Err_PleasSelectData" xml:space="preserve">
+    <value>Please Select Datas!</value>
+  </data>
+  <data name="Err_PN_Not_Found" xml:space="preserve">
+    <value>Item number {0} does not exist in the system, please check.</value>
+  </data>
+  <data name="Err_PrintedImportWO" xml:space="preserve">
+    <value>The ticket: {0} has been printed!</value>
+  </data>
+  <data name="Err_PrintImportRuncardSN" xml:space="preserve">
+    <value>Please select at least one row!</value>
+  </data>
+  <data name="Err_RADIX_TYPE" xml:space="preserve">
+    <value>The hexadecimal type is set incorrectly, please contact the administrator to deal with it.</value>
+  </data>
+  <data name="Err_RANGE" xml:space="preserve">
+    <value>The number of change digits cannot be less than 1. Please enter the correct number of change digits.</value>
+  </data>
+  <data name="Err_RangeLengthRangeStartCodeNotMatch" xml:space="preserve">
+    <value>The character length of the start code is inconsistent with the specified length, please check.</value>
+  </data>
+  <data name="Err_RangerhavedPrinte" xml:space="preserve">
+    <value>This Data haved Print</value>
+  </data>
+  <data name="Err_RangerhavedPrinteEx" xml:space="preserve">
+    <value>The ticket: {0} Start serial number: {1}, already printed!</value>
+  </data>
+  <data name="Err_Ranger_Existed" xml:space="preserve">
+    <value>The serial number {0} has been included in the range {1}.</value>
+  </data>
+  <data name="Err_RangeStartCodeFormatNotMatch" xml:space="preserve">
+    <value>&lt;Range Start Code&gt; cannot match the format, and the {0} character is not allowed.</value>
+  </data>
+  <data name="Err_RangleRule" xml:space="preserve">
+    <value>Please set the bar code management rules, please pay attention to check!</value>
+  </data>
+  <data name="ERR_RULE_TYPE" xml:space="preserve">
+    <value>The rule type is wrong, there is currently no such rule!</value>
+  </data>
+  <data name="Err_RuncardRangerRuleDuplicate" xml:space="preserve">
+    <value>This serial number range rule already exists, please check.</value>
+  </data>
+  <data name="Err_SelectDataIsNoValite" xml:space="preserve">
+    <value>No Selected isnabled Data!</value>
+  </data>
+  <data name="Err_SetProductPrintFile" xml:space="preserve">
+    <value>Please Setting Production Print File！</value>
+  </data>
+  <data name="Err_SiteIsnotEixst" xml:space="preserve">
+    <value>Site Is Not  Exist！</value>
+  </data>
+  <data name="Err_SNFormat" xml:space="preserve">
+    <value>The serial number {0} format {1} does not match.</value>
+  </data>
+  <data name="Err_SNIsReplace" xml:space="preserve">
+    <value>The serial number {0} has been used as a replacement serial number and cannot be set as a new range.</value>
+  </data>
+  <data name="Err_SN_COUNT_MESSAGE" xml:space="preserve">
+    <value>The SNCount parameter has to be greater than 0.</value>
+  </data>
+  <data name="ERR_TASK_TYPE" xml:space="preserve">
+    <value>Please choose the correct Laser Task Type.</value>
+  </data>
+  <data name="ERR_TYPE_ID" xml:space="preserve">
+    <value>Please choose the correct Laser Task id.</value>
+  </data>
+  <data name="Err_UserNotEixst" xml:space="preserve">
+    <value>User information does not exist</value>
+  </data>
+  <data name="Err_WoOrderNO" xml:space="preserve">
+    <value>Please enter the work order number.</value>
+  </data>
+  <data name="Err_WO_ID_Not_Found" xml:space="preserve">
+    <value>The ticket does not exist, please confirm.</value>
+  </data>
+  <data name="Err_WO_Not_Found" xml:space="preserve">
+    <value>The work order {0} does not exist, please confirm.</value>
+  </data>
+  <data name="GET_PRINT_DATA_FAIL" xml:space="preserve">
+    <value>Failed to get print data!</value>
+  </data>
+  <data name="HEADER_STATUS_PRINT" xml:space="preserve">
+    <value>The current serial number information has been printed!</value>
+  </data>
+  <data name="LASER_TASK_RELEASE_ERR" xml:space="preserve">
+    <value>The current task has been released!</value>
+  </data>
+  <data name="Msg_CharNotInDigitalArray" xml:space="preserve">
+    <value>Character {0} is not in {1} hexadecimal character array {2}</value>
+  </data>
+  <data name="Msg_NumberOverFlow" xml:space="preserve">
+    <value>Decreasing quantity out of range</value>
+  </data>
+  <data name="Msg_QTY_Overflow" xml:space="preserve">
+    <value>The number of selected {0} {1} exceeds the maximum allowable range, please confirm.</value>
+  </data>
+  <data name="Msg_Radix_Convert_Overflow" xml:space="preserve">
+    <value>Hex conversion operation overflow</value>
+  </data>
+  <data name="Msg_Radix_Scope_OverFlow" xml:space="preserve">
+    <value>The hexadecimal {0} is not within the defined range [2..36]</value>
+  </data>
+  <data name="Msg_SourceDigitalWrong" xml:space="preserve">
+    <value>Source hexadecimal {0} is not in the defined range [2..36]</value>
+  </data>
+  <data name="Msg_TargetDigitalWrong" xml:space="preserve">
+    <value>Target hexadecimal {0} is not within the defined range [2..36]</value>
+  </data>
+  <data name="PRINT_FAIL" xml:space="preserve">
+    <value>Printing failed！</value>
+  </data>
+  <data name="RUNCARD_RANGER_DATA_NULL" xml:space="preserve">
+    <value>Failed to obtain serial number range data, please check!</value>
+  </data>
+  <data name="RUNCARD_RANGER_ID_NOT_EMPTY" xml:space="preserve">
+    <value>Please select the serial number range data.</value>
+  </data>
+  <data name="SAVE_IMPORTRUNCARDSN_HEADER_ERR" xml:space="preserve">
+    <value>Error saving the main table data of the imported serial number!</value>
+  </data>
+  <data name="SN_NULL" xml:space="preserve">
+    <value>Please enter the serial number.</value>
+  </data>
+  <data name="SN_QTY_NOT_ENOUGH" xml:space="preserve">
+    <value>The remaining number of the current work order serial number is insufficient.</value>
+  </data>
+</root>

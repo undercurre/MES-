@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SfcsRuncardRanger\**" />
+    <Compile Remove="SfcsWo\**" />
+    <EmbeddedResource Remove="SfcsRuncardRanger\**" />
+    <EmbeddedResource Remove="SfcsWo\**" />
+    <None Remove="SfcsRuncardRanger\**" />
+    <None Remove="SfcsWo\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ProcessSet\SfcsOperationLinesRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.31" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JZ.IMS.Core\JZ.IMS.Core.csproj" />
+    <ProjectReference Include="..\JZ.IMS.IRepository\JZ.IMS.IRepository.csproj" />
+    <ProjectReference Include="..\JZ.IMS.ViewModels\JZ.IMS.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AssemblyOperation\" />
+    <Folder Include="SfcsInbound\" />
+  </ItemGroup>
+
+</Project>

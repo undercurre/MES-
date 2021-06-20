@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JZ.IMS.WebApi</name>
+    </assembly>
+    <members>
+        <member name="F:JZ.IMS.WebApi.Controllers.Const.SecurityKey">
+            <summary>
+            密钥。可以从配置文件读取 
+            </summary>
+        </member>
+        <member name="F:JZ.IMS.WebApi.Controllers.Const.Domain">
+            <summary>
+            站点地址
+            </summary>
+        </member>
+        <member name="F:JZ.IMS.WebApi.Controllers.Const.ValidAudience">
+            <summary>
+            受理人，之所以弄成可变的是为了用接口动态更改这个值以模拟强制Token失效
+            真实业务场景可以在数据库或者redis存一个和用户id相关的值，生成token和验证token的时候获取到持久化的值去校验
+            如果重新登陆，则刷新这个值
+            </summary>
+        </member>
+        <member name="F:JZ.IMS.WebApi.Controllers.Const.ExpireTime">
+            <summary>
+            过期时间：单位分钟
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.PolicyHandler.HandleRequirementAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,JZ.IMS.WebApi.Controllers.PolicyRequirement)">
+            <summary>
+            策略授限
+            </summary>
+            <param name="context"></param>
+            <param name="requirement"></param>
+            <returns></returns>
+        </member>
+        <member name="T:JZ.IMS.WebApi.Controllers.PolicyRequirement">
+            <summary>
+            权限承载实体
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Controllers.PolicyRequirement.DeniedAction">
+            <summary>
+            无权限action
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.PolicyRequirement.#ctor">
+            <summary>
+            构造
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.AuthController.GetToken(System.String,System.String)">
+            <summary>
+            login
+            </summary>
+            <param name="userName">用户账号</param>
+            <param name="pwd">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.AuthController.CheckAccount(System.String,System.String)">
+            <summary>
+            登陆校验
+            </summary>
+            <param name="userName"></param>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.ValuesController.value2">
+            该接口用Authorize特性做了权限校验，如果没有通过权限校验，则http返回状态码为401
+            调用该接口的正确姿势是：
+            1.登陆，调用api/Auth接口获取到token
+            2.调用该接口 api/value2 在请求的Header中添加参数 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOiIxNTYwMzM1MzM3IiwiZXhwIjoxNTYwMzM3MTM3LCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiemhhbmdzYW4iLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUwMDAifQ.1S-40SrA4po2l4lB_QdzON_G5ZNT4P_6U25xhTcl7hI
+            Bearer后面有空格，且后面是第一步中接口返回的token值
+            
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.ValuesController.value3">
+             这个接口必须用admin
+            
+        </member>
+        <member name="P:JZ.IMS.WebApi.Controllers.BaseController.ErrorInfo">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.BaseController.CreateErrorLog">
+            <summary>
+            创建错误日志
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.BaseController.CreateErrorLog(JZ.IMS.WebApi.Public.ErrorInfoClass)">
+            <summary>
+            创建错误日志
+            </summary>
+            <param name="errorInfo">错误信息</param>
+            <param name="customCode">自定编号</param>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Controllers.BaseController.CreateErrorLogByService(System.Object)">
+            <summary>
+            创建错误日志
+            </summary>
+            <param name="paraObject"></param>
+        </member>
+        <member name="T:JZ.IMS.WebApi.Public.ApiBaseReturn`1">
+            <summary>
+            Api 返回基类
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ApiBaseReturn`1.ErrorInfo">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ApiBaseReturn`1.ReturnValue">
+            <summary>
+            返回值
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ApiBaseReturn`1.RecordCount">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="T:JZ.IMS.WebApi.Public.ApiErrorClass">
+            <summary>
+            API 错误类
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ApiErrorClass.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ApiErrorClass.StatusCode">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ApiErrorClass.Message">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ApiErrorClass.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ApiErrorClass.Set(System.String)">
+            <summary>
+            设置
+            </summary>
+            <param name="message">内容</param>
+            <param name="category">分类</param>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ApiErrorClass.Set(JZ.IMS.WebApi.Public.ErrorInfoClass)">
+            <summary>
+            设置
+            </summary>
+            <param name="errorInfo">错误信息对象</param>
+        </member>
+        <member name="T:JZ.IMS.WebApi.Public.EnumErrorType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:JZ.IMS.WebApi.Public.EnumErrorType.Error">
+            <summary>
+            错误，系统运行时错误
+            </summary>
+        </member>
+        <member name="F:JZ.IMS.WebApi.Public.EnumErrorType.Warning">
+            <summary>
+            警告，业务检查提示
+            </summary>
+        </member>
+        <member name="T:JZ.IMS.WebApi.Public.ErrorInfoClass">
+            <summary>
+            错误信息类
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorInfoClass.Status">
+            <summary>
+            状态(是否出现错误)
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorInfoClass.Message">
+            <summary>
+            信息
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorInfoClass.ErrorType">
+            <summary>
+            错误类型
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorInfoClass.RefPathItems">
+            <summary>
+            相关(涉及)路径集
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Clear">
+            <summary>
+            清空
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Get">
+            <summary>
+            获取
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Set(System.String,JZ.IMS.WebApi.Public.ErrorRefPathClass,JZ.IMS.WebApi.Public.EnumErrorType)">
+            <summary>
+            设置
+            </summary>
+            <param name="message">内容</param>
+            <param name="path">路径</param>
+            <param name="category">分类</param>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Set(System.String,System.Reflection.MethodBase,JZ.IMS.WebApi.Public.EnumErrorType)">
+            <summary>
+            设置
+            </summary>
+            <param name="message">内容</param>
+            <param name="parentMethod">调用方法</param>
+            <param name="category">分类</param>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Throw">
+            <summary>
+            触发错误
+            </summary>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Throw(System.String,JZ.IMS.WebApi.Public.ErrorRefPathClass,JZ.IMS.WebApi.Public.EnumErrorType)">
+            <summary>
+            触发错误
+            </summary>
+            <param name="message">内容</param>
+            <param name="path">路径</param>
+            <param name="category">分类</param>
+        </member>
+        <member name="M:JZ.IMS.WebApi.Public.ErrorInfoClass.Clone">
+            <summary>
+            克隆
+            </summary>
+            <returns>返回错误对象</returns>
+        </member>
+        <member name="T:JZ.IMS.WebApi.Public.ErrorRefPathClass">
+            <summary>
+            错误参照路径类
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorRefPathClass.NameSpace">
+            <summary>
+            命名空间
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorRefPathClass.ClassName">
+            <summary>
+            类名称
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorRefPathClass.MethodName">
+            <summary>
+            方法名称
+            </summary>
+        </member>
+        <member name="P:JZ.IMS.WebApi.Public.ErrorRefPathClass.ParameterName">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="T:ftw.jwt.webapi.Controllers.Auth11Controller">
+            <summary>
+            登陆并获得Token 
+            </summary>
+        </member>
+    </members>
+</doc>
